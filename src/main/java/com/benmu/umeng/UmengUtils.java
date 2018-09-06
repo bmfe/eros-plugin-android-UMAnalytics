@@ -48,7 +48,7 @@ public class UmengUtils {
      * @param fragment 传单前的fragment,传this就好了
      * @param name     目前传空
      */
-    public static void umengOnFragmentResume(Fragment fragment, String name) {
+    public static void umengOnPageResume(Context fragment, String name) {
         if (fragment == null)
             return;
         MobclickAgent.onPageStart((name == null) ? fragment.getClass().getName() : name);
@@ -60,7 +60,7 @@ public class UmengUtils {
      * @param fragment 传单前的fragment,传this就好了
      * @param name     目前传空
      */
-    public static void umengOnFragmentPause(Fragment fragment, String name) {
+    public static void umengOnPagePause(Context fragment, String name) {
         if (fragment == null)
             return;
         MobclickAgent.onPageEnd((name == null) ? fragment.getClass().getName() : name);

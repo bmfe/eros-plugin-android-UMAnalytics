@@ -29,18 +29,28 @@ public class UmengModule extends WXModule {
     }
 
     @JSMethod(uiThread = true)
-    public void umengOnActivityResume(String name) {
+    public void beginPage(String name) {
         UmengUtils.umengOnActivityResume(mWXSDKInstance.getContext(), name);
     }
 
     @JSMethod(uiThread = true)
-    public void umengOnActivityPause(String name) {
+    public void endPage(String name) {
         UmengUtils.umengOnActivityPause(mWXSDKInstance.getContext(), name);
     }
 
     @JSMethod(uiThread = true)
-    public void umengClick(String name) {
+    public void event(String name) {
         UmengUtils.umengClick(mWXSDKInstance.getContext(), name);
+    }
+
+    @JSMethod(uiThread = true)
+    public void beginEvent(String name) {
+        UmengUtils.umengOnPageResume(mWXSDKInstance.getContext(), name);
+    }
+
+    @JSMethod(uiThread = true)
+    public void endEvent(String name) {
+        UmengUtils.umengOnPagePause(mWXSDKInstance.getContext(), name);
     }
 
 
