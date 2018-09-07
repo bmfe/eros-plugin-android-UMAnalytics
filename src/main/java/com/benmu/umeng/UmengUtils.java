@@ -1,7 +1,6 @@
 package com.benmu.umeng;
 
 import android.content.Context;
-import android.support.v4.app.Fragment;
 
 import com.umeng.analytics.MobclickAgent;
 
