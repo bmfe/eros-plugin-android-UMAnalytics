@@ -4,7 +4,7 @@ import android.content.Context;
 import android.text.TextUtils;
 
 import com.alibaba.weex.plugin.annotation.WeexModule;
-import com.benmu.framework.utils.DebugableUtil;
+import com.eros.framework.utils.DebugableUtil;
 import com.taobao.weex.annotation.JSMethod;
 import com.taobao.weex.common.WXModule;
 import com.umeng.analytics.MobclickAgent;
