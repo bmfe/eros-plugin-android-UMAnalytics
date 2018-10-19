@@ -1,4 +1,4 @@
-package com.benmu.umeng;
+package com.eros.umeng;
 
 import android.content.Context;
 
